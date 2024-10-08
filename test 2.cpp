@@ -18,7 +18,7 @@ int main() {
         cout << "Pilih Mode (Easy atau Hard): " << endl;
         cin >> mode;
 
-        if (mode == "Easy") {
+        if (mode == "Easy"||mode == "easy") {
             int operasi = rand() % 2; 
 
             if (operasi == 0) {
@@ -36,7 +36,7 @@ int main() {
             }
             break; 
 
-        } else if (mode == "Hard") {
+        } else if (mode == "Hard"||mode == "hard") {
             int operasi = rand() % 2;
 
             if (operasi == 0) {
@@ -75,7 +75,7 @@ int main() {
             cout << "Apakah kamu ingin lanjut? (Ya/tidak): ";
             cin >> pilihanLanjut;
 
-            if (pilihanLanjut == "ya") {
+            if (pilihanLanjut == "ya"||pilihanLanjut == "Ya"||pilihanLanjut "y"||pilihanLanjut "Y") {
                 kesempatan = 3;
                 cout << "Kesempatan telah direset. Lanjutkan permainan!" << endl;
                 mode = "";
