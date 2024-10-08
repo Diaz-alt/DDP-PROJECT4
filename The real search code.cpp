@@ -39,3 +39,34 @@ do {
                 if (randSoal >= 4) {
                     key = angkaRand1(1000) * angkaRand2(1000);
                     cout << angkaRand1(1000) << " * " << angkaRand2(1000) << endl;
+                }
+            break;
+            case 2:
+                if (randSoal >= 4) {
+                    key = angkaRand1(1000) + angkaRand2(1000);
+                    cout << angkaRand1(1000) << " + " << angkaRand2(1000) << endl;
+                } else {
+                    key = angkaRand1(1000) - angkaRand2(1000);
+                    cout << angkaRand1(1000) << " - " << angkaRand2(1000) << endl;
+                }
+            break;
+        }
+        cout << "Insert Your Answer: ";
+        cin >> jawaban;
+        
+        if (key == jawaban) {
+            cout << "Correct answer" << endl;
+        } else {
+            cout << "Wrong answer" << endl;
+            poin -= 10;
+        }
+        if (soal == 0) {
+        cout << endl<< " Your Name is: " << user << endl;
+        cout << " Your NPM: " << NPM << endl;
+        cout << " Your last poin is: " << poin;
+        }
+    } while (soal);
+ 
+   
+ return 0;   
+}
