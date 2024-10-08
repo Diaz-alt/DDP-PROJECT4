@@ -38,7 +38,6 @@ int main(){
     cout << "Carilah jawaban dari soal berikut" << endl;
     
     do {
-    operasi=rand()%2;
         if(mode=="easy"||mode=="Easy"){
             a1=arr1[rand()%1000];
             a2=arr1[rand()%1000];
